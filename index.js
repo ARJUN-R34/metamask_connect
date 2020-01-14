@@ -21,7 +21,7 @@ signTx.addEventListener('click', async function () {
     const address = web3.givenProvider.selectedAddress;
     console.log('Address : ', address)
 
-    const message = "Hello World"
+    const message = "Metamask Address"
 
     const signature = await web3.eth.personal.sign(message, address);    
     console.log("Signature : ", signature)
