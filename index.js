@@ -14,6 +14,7 @@ function connect () {
         console.log('Web3 ', web3);
         return web3;
     }
+    console.log('No web3 provider detected.')
 }
 
 signTx.addEventListener('click', async function () {
