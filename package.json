@@ -1,0 +1,20 @@
+{
+  "name": "metamask",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js",
+    "start": "node index.html",
+    "test-audit": "npm audit --audit-level=moderate",
+    "test-lint": "eslint ./*.js find ./config ./controllers ./database ./dto-schemas ./routes ./services ./utils ./test '*.js'"
+  },
+  "author": "ARJUN",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^4.0.43",
+    "web3": "^1.2.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
