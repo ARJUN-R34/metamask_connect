@@ -1,5 +1,5 @@
 // web3 = new Web3(web3.currentProvider)
-var web3;
+let web3;
 // console.log('Web3 : ', web3)
 // console.log('Web3 current account : ', web3.eth.accounts.givenProvider.selectedAddress);
 
@@ -10,10 +10,11 @@ connectButton.addEventListener('click', function () {
 })
 
 function connect () {
-    if (typeof ethereum !== 'undefined') {
+    if (typeof ethereum !== 'undefined' && typeof window !== 'undefined') {
         ethereum.enable()
         debugger;
-        web3 = new Web3(Web3.currentProvider);
+        // web3 = new Web3(Web3.currentProvider);
+        web3 = new Web3(window.web3.currentProvider);
         console.log('Web3 ', web3);
         return web3;
     }
