@@ -27,6 +27,20 @@ signTx.addEventListener('click', async function () {
     const signature = await web3.eth.personal.sign(message, address);    
     console.log("Signature : ", signature)
 
+    const data = {
+        userAdd: address,
+        userHandlename,
+        HNContractAddress,
+        signature
+    }
+
+})
+
+recover.addEventListener('click', async function () {
+
+    const message;
+    const signature;
+
     const recover = await web3.eth.personal.ecRecover(message, signature)
     console.log("Recovered address : ", recover)
 
