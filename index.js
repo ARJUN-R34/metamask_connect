@@ -44,7 +44,7 @@ signTx.addEventListener('click', async function () {
         userHandleName,
         HNContractAddress,
         signedData: {
-            msgParams,
+            message: msgParams,
             signature
         }
     }
