@@ -50,3 +50,24 @@ signTx.addEventListener('click', async function () {
     }
 
 })
+
+ethereumTx.addEventListener('click', async function () {
+
+    const sender = web3.eth.defaultAccount;         //  Sender account. i.e. current account
+    console.log('Sender : ', sender);              
+    const to;                                       //  Receiver's account
+    const amount;                                   //  Amount to be sent in Ether
+    const value = web3.toWei(amount, 'ether')       //  Amount in wei
+
+    await web3.eth.sendTransaction({
+        to,
+        from: sender,
+        value
+    }, function (err, res) {
+        if (err) {
+            console.log(err)
+        }
+
+        console.log(res)
+    })
+})
