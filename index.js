@@ -1,4 +1,4 @@
-// const sigUtil = require('eth-sig-util');
+const sigUtil = require('eth-sig-util');
 let web3;
 
 const HNContractAddress = '0xd4680db560a9d002f0e4884bf9423753be709cdf'
