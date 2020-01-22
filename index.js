@@ -50,20 +50,3 @@ signTx.addEventListener('click', async function () {
     }
 
 })
-
-recover.addEventListener('click', async function () {
-
-    const message = 'Metamask Flow';
-    // const signature;
-
-    const recover = await web3.eth.personal.ecRecover(message, signature)
-    console.log("Recovered address : ", recover)
-
-    const data = {
-        userAdd: address,
-        userHandlename,
-        HNContractAddress,
-        signature
-    }
-
-})
