@@ -1,4 +1,4 @@
-# Metamask Flow
+# Metamask WEB3 Flow
 
 ## Libraries Used
 
